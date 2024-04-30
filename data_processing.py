@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import LabelEncoder
@@ -65,13 +67,13 @@ def encoder(data):
     return data
 
 
-# filepath = r"C:\Users\凉丶凉丶\Desktop\基于复杂网络视角的JJGY人员选拔研究\TEST副本.xlsx"
-# data = pd.read_excel(filepath)
-# # 删除无效数据列（待定）16列
-# data = data.drop(['编号','K1', 'K2', 'K3', 'K4', 'K5', '所属联队', '姓名','记录日期','上高原日期', '填写人', '填写人所属连队', '职务', 'name33','wtime','name3'],axis=1)
-# encoder(data) #对来源地进行量化
-# newdata = data_processing(data)
-# newdata.to_excel("newdata.xlsx")
+filepath = "TEST副本.xlsx"
+data = pd.read_excel(filepath)
+# 删除无效数据列（待定）16列
+data = data.drop(['编号','K1', 'K2', 'K3', 'K4', 'K5', '所属联队', '姓名','记录日期','上高原日期', '填写人', '填写人所属连队', '职务', 'name33','wtime','name3'],axis=1)
+encoder(data) #对来源地进行量化
+newdata = data_processing(data)
+newdata.to_excel("newdata.xlsx")
 
 
 

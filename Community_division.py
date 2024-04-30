@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 import networkx as nx
 import networkx.algorithms.community as nx_comm
 import matplotlib.pyplot as plt
@@ -161,7 +163,7 @@ def showCommunityCenters(communityCenter, graphName, windowSize, NotShow1=True):
 
 Rules = ["kcore", "degree", "hindex"]#选取社团中心时的规则选择，将选0，即将K-shell值作为第一因素，度值作为第二因素。选2，即将H-index值作为第一因素，度值作为第二因素
 
-ConnectedG = nx.read_graphml("graph100000.graphml")#获取所建网络
+ConnectedG = nx.read_graphml("graph9018.graphml")#获取所建网络
 
 partition109fullConnect = nx_comm.louvain_communities(ConnectedG, seed=123)
 print(partition109fullConnect)

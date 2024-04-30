@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 import networkx as nx
 import embedding as emb
 import pandas as pd
@@ -70,24 +72,24 @@ def drawcorrelation(G):
     plt.show()
 
 
-# data = pd.read_excel('newdata.xlsx')
-# print(data)
-# data = data.drop(data.columns[:1],axis = 1)#删除读文件时产生的unamed：0列
-# print(data)
-# # 删除他人评价列
-# data = data.drop(['t11','t12','t13','t14','t15','t16','t17','t18','t31','t32','t33','t34','t35','t36','t37','t38'],axis = 1)
-# print(data)
-#
-# resCoor = calPearson(data, ifabs=False)#相关系数矩阵
-#
-# # drawcorrelation(resCoor)#绘制相关性分布
-#
-# # resCoor.to_excel('newdata_Pearson.xlsx')
-# # print(resCoor)
-#
-# graph = Connect(resCoor)#建网
-#
-# # #绘制建网处度分布
-# # # G = nx.read_graphml("graph1200.graphml")
-# # # drawDegree_distribution(G)
+data = pd.read_excel('newdata.xlsx')
+print(data)
+data = data.drop(data.columns[:1],axis = 1)#删除读文件时产生的unamed：0列
+print(data)
+# 删除他人评价列
+data = data.drop(['t11','t12','t13','t14','t15','t16','t17','t18','t31','t32','t33','t34','t35','t36','t37','t38'],axis = 1)
+print(data)
+
+resCoor = calPearson(data, ifabs=False)#相关系数矩阵
+
+# drawcorrelation(resCoor)#绘制相关性分布
+
+# resCoor.to_excel('newdata_Pearson.xlsx')
+# print(resCoor)
+
+graph = Connect(resCoor)#建网
+
+# #绘制建网处度分布
+# # G = nx.read_graphml("graph1200.graphml")
+# # drawDegree_distribution(G)
 

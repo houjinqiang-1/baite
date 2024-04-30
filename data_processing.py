@@ -58,6 +58,7 @@ def data_processing(data):
         MIN = d.min()
         data[col] = ((d - MIN) / (MAX - MIN))
     # print(data)
+    return data
 
 #字符串量化
 def encoder(data):

@@ -1,3 +1,5 @@
+# encoding: utf-8
+
 import numpy as np
 import pandas as pd
 from sklearn import linear_model
@@ -91,8 +93,8 @@ realScores = data[avg].mean(axis = 1)
 # useCol = ['D26','PCT_cq','PDW_cq','G36','J24','J25','t2C15','E6','G21','C19','D6']
 # useCol = ['PDW_cq','T1_ES']
 # useCol = ['T1_SP','T1_interference','T3_memory','PDW_cq','PCT_cq','G26','precise_2_mot_py','rt_change_120200_w01_shift_py','T1_ES','GS_cq','rate_hit_nwm_py']
-# useCol = ['T1_SP', 'T1_ER', 'T1_interference', 'T3_memory', 'rough_2_4_mot_gy', 'rt_change_120200_w01_shift_gy', 'G26', 'acc_change_120200_w01_shift_gy', 'weight1', 'PDW_cq', 'PCT_cq']
-# useCol = ['A3','B5','B12','B21','B25','B29','C2','C3','C4','C15','E3','E7','F4','F7','F8','G3','G6','G11','G12','G33','I13','J11','J18','K10','t2A10','t2A17','t2D5','t2D7','t2D12','t2D25','t2D40','t2E3','t2E17','t2E18','o1','o3','A3r','t3D17','t3D18','t3D23','t3E2','t3E3','t3E18','T3_OTP','T3_ORP','T2_rf','t1_OTP','t1_ORP','acc_change_120200_w01_shift_gy','SP_cq','HCT_sn1']
+# useColol = ['T1_SP', 'T1_ER', 'T1_interference', 'T3_memory', 'rough_2_4_mot_gy', 'rt_change_120200_w01_shift_gy', 'G26', 'acc_change_120200_w01_shift_gy', 'weight1', 'PDW_cq', 'PCT_cq']
+useCol = ['A3','B5','B12','B21','B25','B29','C2','C3','C4','C15','E3','E7','F4','F7','F8','G3','G6','G11','G12','G33','I13','J11','J18','K10','t2A10','t2A17','t2D5','t2D7','t2D12','t2D25','t2D40','t2E3','t2E17','t2E18','o1','o3','A3r','t3D17','t3D18','t3D23','t3E2','t3E3','t3E18','T3_OTP','T3_ORP','T2_rf','t1_OTP','t1_ORP','acc_change_120200_w01_shift_gy','SP_cq','HCT_sn1']
 # useCol = ['A3','B5','B12','B21','B25','B29','C2','C3','C4','C15','E3','E7','F4','F7','F8','G3','G6','G11','G12','G33','I13','J11','J18','K10','o1','o3','A3r','t1_OTP','t1_ORP','acc_change_120200_w01_shift_gy','SP_cq','HCT_sn1']
 # useCol = ['t2D6','t2E7']
 # model2(data,useCol)
